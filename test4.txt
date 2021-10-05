@@ -1,0 +1,12 @@
+ 15366 u0_a254      10 -10  19G 478M 285M S 10.3   6.6   5:12.30 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 491M 285M S 34.4   6.8   5:25.01 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 284M S 43.3   6.7   5:47.15 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 283M S 46.6   6.7   5:47.34 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 284M S 40.0   6.7   5:47.51 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 283M S 37.9   6.7   5:47.67 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 284M S 27.5   6.7   5:47.84 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 284M S 40.0   6.7   5:47.98 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 283M S 40.0   6.7   5:48.15 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 488M 284M S 44.8   6.7   5:48.32 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 487M 283M S 44.8   6.7   5:48.50 com.google.android.youtube
+ 15366 u0_a254      10 -10  19G 488M 284M S 36.6   6.7   5:48.69 com.google.android.youtube

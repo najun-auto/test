@@ -1,0 +1,1033 @@
+[s[999C[999B[6n[u[H[J[?25l[H[J[s[999C[999B[6n[uTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6482560K used,   877684K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771060K cached
+800%cpu   7%user   0%nice  21%sys 769%idle   0%iow   3%irq   0%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.2M 3.2M R 17.2   0.0   0:00.04 top[m
+   523 root         20   0  12G 4.7M 3.2M S  6.8   0.0 172:43.96 ueventd
+ 25648 shell        20   0  12G 5.5M 4.6M S  3.4   0.0   0:23.98 adbd --root_se+
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/2:1-e+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/1:0-m+
+ 25876 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:2-m+
+ 25873 root         20   0    0    0    0 I  0.0   0.0   0:00.04 [kworker/3:1-m+
+ 25872 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/7:2-e+
+ 25870 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:0-e+
+ 25864 root         20   0    0    0    0 I  0.0   0.0   0:02.02 [kworker/7:1-u+
+ 25863 root         20   0    0    0    0 I  0.0   0.0   0:00.34 [kworker/u16:2+
+ 25858 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/7:0-u+
+ 25820 u0_a176      20   0  15G  91M  57M S  0.0   1.2   0:00.11 com.sec.androi+
+ 25783 system       20   0  15G 125M  86M S  0.0   1.7   0:00.65 com.wssyncmldm
+ 25758 u0_a236      20   0  15G  86M  53M S  0.0   1.1   0:00.11 com.google.and+
+ 25694 clat          0 -20  12G 2.3M 1.8M S  0.0   0.0   0:00.13 clatd-rmnet3 -+
+ 25686 root         20   0  12G 2.1M 1.6M S  0.0   0.0   0:00.38 dnsmasq --keep+
+ 25660 system       20   0  15G  91M  58M S  0.0   1.2   0:00.07 com.samsung.an+[H[JTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6482536K used,   877708K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771120K cached
+800%cpu   1%user   0%nice   5%sys 790%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.6   0.0   0:23.99 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  2.0   0.1   6:48.14 logd
+[1m 25888 shell        20   0  12G 4.8M 3.2M R  1.0   0.0   0:00.09 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.72 [irq/241-dwc3]
+  3591 system       20   0  15G 136M  85M S  0.6   1.8  33:22.18 com.sec.androi+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.51 argosd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.02 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.26 [kworker/u17:2+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.15 com.samsung.an+
+  1230 system       18  -2  21G 497M 309M S  0.3   6.9  77:11.31 system_server
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.04 lhd /vendor/et+
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.03 [kworker/u19:1+
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.24 iod
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:43.98 ueventd
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.63 [spi7]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.21 [rcu_preempt]
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/2:1-e+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/1:0-e+[H[JTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6482496K used,   877748K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771160K cached
+800%cpu   3%user   0%nice   7%sys 786%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.07 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.20 logd
+  1230 system       18  -2  21G 497M 309M S  1.3   6.9  77:11.32 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.12 top[m
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.54 iptables-resto+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.74 [irq/241-dwc3]
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.70 ip6tables-rest+
+   843 system       20   0  12G 2.7M 2.7M S  0.6   0.0   6:50.89 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.28 netd
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:43.99 ueventd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.03 [kworker/7:1-u+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.69 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.27 [kworker/u17:2+
+  3591 system       20   0  15G 136M  85M S  0.3   1.8  33:22.20 com.sec.androi+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.57 com.sec.imsser+
+  1867 network_sta+ 20   0  15G 119M  82M S  0.3   1.6   3:58.49 com.android.ne+
+  1665 radio        20   0  16G 145M  97M S  0.3   2.0   4:30.24 com.android.ph+
+   644 system       20   0  12G 3.8M 3.3M S  0.3   0.0   1:47.20 android.system+
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.03 servicemanager
+     1 root         20   0  12G 5.4M 3.9M S  0.3   0.0   0:46.52 init second_st+[H[JTasks: 689 total,   3 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6482488K used,   877756K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771164K cached
+800%cpu   2%user   0%nice   7%sys 786%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+   575 logd         30  10  12G  11M 2.5M S  2.0   0.1   6:48.25 logd
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.6   0.0   0:24.14 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.15 top[m
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.04 [kworker/7:1-u+
+[1m 25694 clat          0 -20  12G 2.3M 1.8M R  0.6   0.0   0:00.13 clatd-rmnet3 -+[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.76 [irq/241-dwc3]
+  1665 radio        20   0  16G 145M  97M S  0.6   2.0   4:30.25 com.android.ph+
+  1230 system       18  -2  21G 498M 309M S  0.6   6.9  77:11.36 system_server
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.28 [kworker/u17:2+
+  2138 root         20   0  12G 2.7M 2.2M S  0.3   0.0   2:16.72 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.3   0.0   2:25.57 iptables-resto+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.16 com.samsung.an+
+  3591 system       20   0  15G 136M  85M S  0.3   1.8  33:22.21 com.sec.androi+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.14 com.android.sy+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.53 argosd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.25 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.66 [esgov:0]
+   580 root         -2   0    0    0    0 S  0.3   0.0   0:27.55 [psimon]
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.04 servicemanager
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.01 ueventd[m[H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6482480K used,   877764K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771168K cached
+800%cpu   2%user   0%nice   4%sys 791%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.19 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:24.19 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.3   0.1   6:48.31 logd
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.02 ueventd[m
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.06 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.78 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.29 [kworker/u17:2+
+  1056 u0_a117      20   0  16G 126M  87M S  0.3   1.7   0:18.96 com.samsung.an+
+ 16502 u0_a69       20   0  16G 107M  71M S  0.3   1.4   2:13.77 android.proces+
+  1230 system       18  -2  21G 499M 309M S  0.3   6.9  77:11.38 system_server
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.61 rild
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.05 lhd /vendor/et+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.54 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.30 netd
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.09 [esgov:4]
+   280 root         RT   0    0    0    0 S  0.3   0.0   1:28.54 [thermal_G3D]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.64 [spi7]
+    16 root         20   0    0    0    0 S  0.3   0.0   3:22.42 [ksoftirqd/1]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.22 [rcu_preempt]
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+[H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6466384K used,   893860K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771172K cached
+800%cpu   3%user   2%nice   7%sys 784%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 499M 309M S  2.3   6.9  77:11.39 system_server
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:24.23 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.35 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.23 top[m
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.58 iptables-resto+
+  3591 system       20   0  15G 136M  85M S  1.0   1.8  33:22.22 com.sec.androi+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.79 [irq/241-dwc3]
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.73 ip6tables-rest+
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.04 ueventd[m
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.07 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.30 [kworker/u17:2+
+  1867 network_sta+ 20   0  15G 119M  82M S  0.3   1.6   3:58.50 com.android.ne+
+  1095 system       20   0  12G 1.4M 1.4M S  0.3   0.0   4:56.02 epic
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.55 argosd
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:50.91 vendor.samsung+
+   827 system       20   0  12G 3.7M 3.3M S  0.3   0.0   0:37.56 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.31 netd
+   791 statsd       20   0  12G 8.5M 3.3M S  0.3   0.1   4:38.13 statsd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.26 iod
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.53 [simpleinterac+[H[JTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6466376K used,   893868K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771136K cached
+800%cpu   3%user   0%nice   6%sys 787%idle   0%iow   3%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.29 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.40 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.27 top[m
+ 25421 root          0 -20    0    0    0 I  1.0   0.0   0:06.31 [kworker/u17:2+
+  1230 system       18  -2  21G 483M 309M S  1.0   6.7  77:11.46 system_server
+ 25880 root         20   0    0    0    0 I  0.6   0.0   0:00.02 [kworker/u16:0+
+  3591 system       20   0  15G 136M  85M S  0.6   1.8  33:22.25 com.sec.androi+
+  1665 radio        20   0  16G 145M  97M S  0.6   2.0   4:30.27 com.android.ph+
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:44.06 ueventd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.08 [kworker/7:1-u+
+ 25694 clat          0 -20  12G 2.3M 1.8M S  0.3   0.0   0:00.15 clatd-rmnet3 -+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.81 [irq/241-dwc3]
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.15 com.android.sy+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.62 rild
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.56 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.32 netd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.27 iod
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.05 servicemanager
+   278 root         RT   0    0    0    0 S  0.3   0.0   1:28.97 [thermal_MID]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.65 [spi7][H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6466116K used,   894128K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771140K cached
+800%cpu   3%user   0%nice   7%sys 786%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.36 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  2.3   0.1   6:48.45 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.30 top[m
+  1230 system       18  -2  21G 483M 309M S  1.0   6.7  77:11.49 system_server
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.09 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.82 [irq/241-dwc3]
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.75 ip6tables-rest+
+  3591 system       20   0  15G 136M  85M S  0.6   1.8  33:22.27 com.sec.androi+
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.33 netd
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.08 ueventd[m
+ 25686 root         20   0  12G 2.1M 1.6M S  0.3   0.0   0:00.38 dnsmasq --keep+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.34 [kworker/u17:2+
+  2132 root         20   0  12G 2.8M 2.2M S  0.3   0.0   2:25.61 iptables-resto+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.17 com.samsung.an+
+  1867 network_sta+ 20   0  15G 119M  82M S  0.3   1.6   3:58.51 com.android.ne+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.57 argosd
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.04 [kworker/u19:1+
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.28 iod
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.10 [esgov:4]
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.67 [esgov:0][H[JTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6490252K used,   869992K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771180K cached
+800%cpu   4%user   1%nice  11%sys 781%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 483M 309M S  5.0   6.7  77:11.52 system_server
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.6   0.0   0:24.43 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.0   0.1   6:48.52 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  0.6   0.0   0:00.34 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.84 [irq/241-dwc3]
+   767 root         20   0  12G 4.6M 4.1M S  0.6   0.0   0:48.29 magiskd
+   644 system       20   0  12G 3.8M 3.3M S  0.6   0.0   1:47.21 android.system+
+   441 root         20   0    0    0    0 D  0.6   0.0   0:15.59 [dhd_rpm_state+
+ 25883 root         20   0    0    0    0 I  0.3   0.0   0:00.00 [kworker/2:1-e+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.11 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.35 [kworker/u17:2+
+  3591 system       20   0  15G 136M  85M S  0.3   1.8  33:22.29 com.sec.androi+
+  1693 bluetooth    20   0  16G 119M  82M S  0.3   1.6   0:24.85 com.android.bl+
+  1665 radio        20   0  16G 145M  97M S  0.3   2.0   4:30.29 com.android.ph+
+  1055 system       20   0  12G 4.0M 3.9M S  0.3   0.0   0:02.11 connfwexe
+   825 wifi         20   0  12G 2.7M 2.4M S  0.3   0.0   0:08.19 android.hardwa+
+   791 statsd       20   0  12G 8.5M 3.3M S  0.3   0.1   4:38.14 statsd
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.06 servicemanager
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.10 ueventd
+   136 root         20   0    0    0    0 S  0.3   0.0  13:30.81 [kzerod][H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6490480K used,   869764K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771188K cached
+800%cpu   3%user   0%nice   7%sys 788%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  3591 system       20   0  15G 136M  85M S  2.3   1.8  33:22.30 com.sec.androi+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.36 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:24.48 adbd --root_se+
+  1230 system       18  -2  21G 484M 309M S  1.3   6.7  77:11.67 system_server
+  2138 root         20   0  12G 2.7M 2.2M S  1.0   0.0   2:16.77 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.62 iptables-resto+
+   575 logd         30  10  12G  11M 2.5M S  0.6   0.1   6:48.55 logd
+ 25880 root         20   0    0    0    0 I  0.3   0.0   0:00.04 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.3   0.0   0:00.01 [kworker/1:0-p+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.36 [kworker/u17:2+
+ 25093 root         20   0    0    0    0 I  0.3   0.0   0:00.21 [kworker/4:0-e+
+ 25031 root         20   0    0    0    0 I  0.3   0.0   0:00.20 [kworker/0:3-e+
+  1867 network_sta+ 20   0  15G 119M  82M S  0.3   1.6   3:58.52 com.android.ne+
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:50.92 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.35 netd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.29 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.68 [esgov:0]
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.11 ueventd[m
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.54 [simpleinterac+
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.66 [spi7][H[JTasks: 688 total,   1 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6490684K used,   869560K free,   3497984 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771192K cached
+800%cpu   1%user   0%nice   4%sys 792%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:24.52 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.57 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.40 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.86 [irq/241-dwc3]
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.12 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.37 [kworker/u17:2+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.18 com.samsung.an+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.58 com.sec.imsser+
+  1630 system       20   0  12G 2.3M 2.3M S  0.3   0.0   2:38.48 mcpsd
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.06 lhd /vendor/et+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.58 argosd
+  1052 system       20   0  12G 1.7M 1.7M S  0.3   0.0   0:12.08 diagexe
+   886 system       12  -8  13G  25M  18M S  0.3   0.3   6:02.29 surfaceflinger
+   588 root         RT   0    0    0    0 S  0.3   0.0   1:31.56 [esgov:7]
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.12 ueventd
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/2:1-m+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.05 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/1:0-p+
+ 25876 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:2-m+[H[JTasks: 689 total,   1 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6490748K used,   869496K free,   3534848 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771200K cached
+800%cpu   3%user   0%nice   5%sys 789%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.58 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.44 top[m
+   575 logd         30  10  12G  11M 2.5M S  1.3   0.1   6:48.62 logd
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.59 argosd
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:44.13 ueventd
+ 25880 root         20   0    0    0    0 I  0.3   0.0   0:00.05 [kworker/u16:0+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.13 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.88 [irq/241-dwc3]
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.70 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.38 [kworker/u17:2+
+  3591 system       20   0  15G 137M  85M S  0.3   1.8  33:22.37 com.sec.androi+
+  1230 system       18  -2  21G 484M 309M S  0.3   6.7  77:11.71 system_server
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.30 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.69 [esgov:0]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.67 [spi7]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.25 [rcu_preempt]
+ 25891 shell        20   0  12G 2.4M 1.9M S  0.0   0.0   0:00.01 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/2:1-e+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/1:0-m+[H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6490344K used,   869900K free,   3534848 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771248K cached
+800%cpu   4%user   0%nice   9%sys 784%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.65 adbd --root_se+
+  1230 system       18  -2  21G 484M 309M S  1.6   6.7  77:11.72 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.48 top[m
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.64 iptables-resto+
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.0   0.0 172:44.15 ueventd[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.89 [irq/241-dwc3]
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.80 ip6tables-rest+
+  3591 system       20   0  15G 137M  85M S  0.6   1.8  33:22.38 com.sec.androi+
+   843 system       20   0  12G 2.7M 2.7M S  0.6   0.0   6:50.93 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.36 netd
+   575 logd         30  10  12G  11M 2.5M S  0.6   0.1   6:48.66 logd
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.3   0.0   0:00.01 sh
+ 25880 root         20   0    0    0    0 I  0.3   0.0   0:00.06 [kworker/u16:0+
+ 25873 root         20   0    0    0    0 I  0.3   0.0   0:00.04 [kworker/3:1-m+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.71 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.39 [kworker/u17:2+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.16 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.30 com.android.ph+
+   831 cameraserver 20   0  12G  21M  16M S  0.3   0.2   0:57.26 vendor.samsung+
+   791 statsd       20   0  12G 8.5M 3.3M S  0.3   0.1   4:38.15 statsd[H[JTasks: 689 total,   2 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489960K used,   870284K free,   3534848 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771256K cached
+800%cpu   1%user   0%nice   6%sys 790%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  3.6   0.0   0:24.72 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.68 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  0.6   0.0   0:00.52 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.91 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.40 [kworker/u17:2+
+  3648 u0_a265      20   0  15G 109M  73M S  0.6   1.5   0:03.72 com.google.and+
+ 25880 root         20   0    0    0    0 I  0.3   0.0   0:00.07 [kworker/u16:0+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.14 [kworker/7:1-u+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.19 com.samsung.an+
+  3591 system       20   0  15G 137M  85M S  0.3   1.8  33:22.40 com.sec.androi+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.17 com.android.sy+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.61 argosd
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.05 [kworker/u19:1+
+   885 system       20   0  12G 2.7M 2.7M S  0.3   0.0   0:31.74 perfmond
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.31 iod
+   589 root         10 -10  12G 1.6M 1.6M S  0.3   0.0   0:34.14 watchdogd 10 30
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.71 [esgov:0]
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.18 ueventd[m
+   280 root         RT   0    0    0    0 S  0.3   0.0   1:28.55 [thermal_G3D]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.68 [spi7][H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489748K used,   870496K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771256K cached
+800%cpu   2%user   0%nice   6%sys 789%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.83 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.54 top[m
+  1230 system       18  -2  21G 485M 309M S  1.0   6.7  77:11.77 system_server
+   575 logd         30  10  12G  11M 2.5M S  1.0   0.1   6:48.73 logd
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.93 [irq/241-dwc3]
+  1867 network_sta+ 20   0  15G 119M  82M S  0.6   1.6   3:58.53 com.android.ne+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.3   0.0   0:00.02 sh
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.15 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.42 [kworker/u17:2+
+ 24674 u0_a63       20   0  15G 120M  84M S  0.3   1.6   0:00.99 com.samsung.an+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.59 com.sec.imsser+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.63 rild
+   886 system       12  -8  13G  25M  18M S  0.3   0.3   6:02.30 surfaceflinger
+   874 system       20   0  12G 8.1M 8.1M S  0.3   0.1   0:32.89 vendor.samsung+
+   580 root         -2   0    0    0    0 S  0.3   0.0   0:27.56 [psimon]
+   578 system       20   0  12G 4.6M 4.0M S  0.3   0.0   0:57.26 hwservicemanag+
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.07 servicemanager
+   278 root         RT   0    0    0    0 S  0.3   0.0   1:28.98 [thermal_MID]
+     1 root         20   0  12G 5.4M 3.9M S  0.3   0.0   0:46.55 init second_st+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489724K used,   870520K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771260K cached
+800%cpu   3%user   1%nice   7%sys 786%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:24.90 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.6   0.1   6:48.76 logd
+  1230 system       18  -2  21G 485M 309M S  1.3   6.7  77:11.80 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.58 top[m
+  3591 system       20   0  15G 137M  85M S  1.0   1.8  33:22.41 com.sec.androi+
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.43 [kworker/u17:2+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.67 iptables-resto+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.62 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.38 netd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.16 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.95 [irq/241-dwc3]
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.72 [kworker/u16:3+
+  2138 root         20   0  12G 2.7M 2.2M S  0.3   0.0   2:16.82 ip6tables-rest+
+ 17739 oem_5018     20   0  15G 112M  74M S  0.3   1.5   2:34.55 com.samsung.an+
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:50.95 vendor.samsung+
+   823 system       20   0  12G 3.0M 2.8M S  0.3   0.0   5:50.33 android.hardwa+
+   791 statsd       20   0  12G 8.8M 3.3M S  0.3   0.1   4:38.16 statsd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.32 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.72 [esgov:0]
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.19 ueventd[H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489724K used,   870520K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771292K cached
+800%cpu   2%user   0%nice   5%sys 791%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 485M 309M S  1.6   6.7  77:11.84 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.61 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.0   0.0   0:24.97 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.0   0.1   6:48.81 logd
+ 25450 root         20   0    0    0    0 I  0.6   0.0   0:00.73 [kworker/u16:3+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.17 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.96 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.45 [kworker/u17:2+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.20 com.samsung.an+
+  3591 system       20   0  15G 137M  85M S  0.3   1.9  33:22.44 com.sec.androi+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.31 com.android.ph+
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.07 lhd /vendor/et+
+   879 audioserver  20   0  12G  13M  11M S  0.3   0.1   2:14.05 audioserver
+   815 system       20   0  12G 3.1M 2.9M S  0.3   0.0   3:09.76 android.hardwa+
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.20 ueventd[m
+   276 root         RT   0    0    0    0 S  0.3   0.0   3:46.42 [thermal_BIG]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.69 [spi7]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489496K used,   870748K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771268K cached
+800%cpu   5%user   0%nice   6%sys 786%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 485M 309M S  2.0   6.7  77:11.89 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.65 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:25.00 adbd --root_se+
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.83 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.69 iptables-resto+
+  3591 system       20   0  15G 137M  85M S  0.6   1.9  33:22.45 com.sec.androi+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.64 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.40 netd
+   767 root         20   0  12G 4.6M 4.1M S  0.6   0.0   0:48.31 magiskd
+   575 logd         30  10  12G  11M 2.5M S  0.6   0.1   6:48.84 logd
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.97 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.46 [kworker/u17:2+
+  1867 network_sta+ 20   0  15G 119M  82M S  0.3   1.6   3:58.55 com.android.ne+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.18 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.32 com.android.ph+
+   807 audioserver  20   0  57M 3.6M 2.4M S  0.3   0.0   2:40.04 android.hardwa+
+   791 statsd       20   0  12G 8.8M 3.3M S  0.3   0.1   4:38.17 statsd
+   764 vendor_audit 20   0  12G 2.2M 2.1M S  0.3   0.0   0:09.70 auditd -k
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.33 iod
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.12 [esgov:4][H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489472K used,   870772K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771272K cached
+800%cpu   2%user   2%nice   5%sys 789%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 20778 u0_a241      20   0  16G 204M 144M S  3.3   2.8   0:32.49 com.google.and+
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:25.04 adbd --root_se+
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.3   0.0 172:44.22 ueventd[m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.69 top[m
+   575 logd         30  10  12G  11M 2.5M S  0.6   0.1   6:48.86 logd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.18 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:07.98 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.47 [kworker/u17:2+
+  1056 u0_a117      20   0  16G 126M  87M S  0.3   1.7   0:18.97 com.samsung.an+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.21 com.samsung.an+
+  3591 system       20   0  15G 137M  85M S  0.3   1.9  33:22.47 com.sec.androi+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.60 com.sec.imsser+
+   695 system       20   0  12G 2.3M 2.3M S  0.3   0.0   0:18.86 vendor.samsung+
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.73 [esgov:0]
+   428 root         20   0    0    0    0 D  0.3   0.0   0:12.55 [tz_worker_thr+
+   194 root         RT   0    0    0    0 S  0.3   0.0   7:44.83 [irq/374-15900+
+    31 root         20   0    0    0    0 S  0.3   0.0   3:24.49 [ksoftirqd/4]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.28 [rcu_preempt]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489472K used,   870772K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771276K cached
+800%cpu   2%user   1%nice   6%sys 789%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 486M 309M S  1.6   6.7  77:11.95 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.72 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.0   0.0   0:25.08 adbd --root_se+
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.85 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.71 iptables-resto+
+  3591 system       20   0  15G 137M  85M S  0.6   1.9  33:22.48 com.sec.androi+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.66 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.42 netd
+   575 logd         30  10  12G  11M 2.5M S  0.6   0.1   6:48.88 logd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.19 [kworker/7:1-u+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.75 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.48 [kworker/u17:2+
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.08 lhd /vendor/et+
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:50.96 vendor.samsung+
+   644 system       20   0  12G 3.8M 3.3M S  0.3   0.0   1:47.23 android.system+
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.34 iod
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.13 [esgov:4]
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.09 servicemanager
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.26 ueventd
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.70 [spi7][H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489472K used,   870772K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771280K cached
+800%cpu   2%user   0%nice   5%sys 791%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.6   0.0   0:00.76 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:25.11 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.0   0.1   6:48.90 logd
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.0   0.0 172:44.27 ueventd[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:07.99 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.49 [kworker/u17:2+
+  1230 system       18  -2  21G 487M 309M S  0.6   6.7  77:12.00 system_server
+     1 root         20   0  12G 5.4M 3.9M S  0.6   0.0   0:46.56 init second_st+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.33 com.android.ph+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.64 rild
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.06 [kworker/u19:1+
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.56 [simpleinterac+
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.29 [rcu_preempt]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/2:1-e+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/1:0-m+
+ 25876 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:2-m+[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489472K used,   870772K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771284K cached
+800%cpu   3%user   0%nice   5%sys 790%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:25.15 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.81 top[m
+  1230 system       18  -2  21G 487M 309M S  1.0   6.7  77:12.02 system_server
+   575 logd         30  10  12G  11M 2.5M S  1.0   0.1   6:48.93 logd
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:44.30 ueventd
+ 25879 root         20   0    0    0    0 I  0.3   0.0   0:00.02 [kworker/1:0-m+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.20 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.01 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.51 [kworker/u17:2+
+ 25168 root         20   0    0    0    0 I  0.3   0.0   0:00.03 [kworker/6:1-m+
+  3591 system       20   0  15G 137M  85M S  0.3   1.9  33:22.50 com.sec.androi+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.19 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.34 com.android.ph+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.65 rild
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.68 argosd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.35 iod
+   278 root         RT   0    0    0    0 S  0.3   0.0   1:28.99 [thermal_MID]
+   276 root         RT   0    0    0    0 S  0.3   0.0   3:46.43 [thermal_BIG]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.71 [spi7]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+[H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489244K used,   871000K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771288K cached
+800%cpu   3%user   0%nice   8%sys 785%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:25.21 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  2.0   0.1   6:48.96 logd
+  3591 system       20   0  15G 137M  85M S  1.3   1.9  33:22.51 com.sec.androi+
+  1230 system       18  -2  21G 487M 309M S  1.3   6.7  77:12.05 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.84 top[m
+  2138 root         20   0  12G 2.7M 2.2M S  1.0   0.0   2:16.87 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.73 iptables-resto+
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.21 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.02 [irq/241-dwc3]
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.44 netd
+ 25694 clat          0 -20  12G 2.3M 1.8M S  0.3   0.0   0:00.16 clatd-rmnet3 -+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.52 [kworker/u17:2+
+  2156 clat          0 -20  12G 1.9M 1.8M S  0.3   0.0   0:01.14 clatd-rmnet2 -+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.56 com.android.ne+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.69 argosd
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:50.97 vendor.samsung+
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.18 statsd
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.32 ueventd[m
+   280 root         RT   0    0    0    0 S  0.3   0.0   1:28.56 [thermal_G3D]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.30 [rcu_preempt][H[JTasks: 690 total,   3 running, 687 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489016K used,   871228K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771292K cached
+800%cpu   2%user   0%nice   5%sys 790%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:25.28 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.87 top[m
+   575 logd         30  10  12G  11M 2.5M S  1.3   0.1   6:49.02 logd
+  1230 system       18  -2  21G 487M 309M S  1.0   6.7  77:12.09 system_server
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.23 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.04 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.53 [kworker/u17:2+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.22 com.samsung.an+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.57 com.android.ne+
+  1630 system       20   0  12G 2.3M 2.3M S  0.3   0.0   2:38.49 mcpsd
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.70 argosd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.36 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.74 [esgov:0]
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.10 servicemanager
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.33 ueventd[m
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.57 [simpleinterac+
+   277 root         RT   0    0    0    0 S  0.3   0.0   2:48.52 [thermal_hotpl+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+[H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489000K used,   871244K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771296K cached
+800%cpu   2%user   0%nice   6%sys 789%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:25.34 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  1.3   0.1   6:49.06 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.91 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.05 [irq/241-dwc3]
+ 16502 u0_a69       20   0  16G 107M  71M S  0.6   1.4   2:13.78 android.proces+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.24 [kworker/7:1-u+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.76 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.54 [kworker/u17:2+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.20 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.35 com.android.ph+
+  1230 system       18  -2  21G 487M 309M S  0.3   6.7  77:12.12 system_server
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.14 [esgov:4]
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.34 ueventd[m
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.72 [spi7]
+    16 root         20   0    0    0    0 S  0.3   0.0   3:22.43 [ksoftirqd/1]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/2:1-e+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/u16:0+[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6489000K used,   871244K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771300K cached
+800%cpu   4%user   0%nice   7%sys 784%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 487M 309M S  2.6   6.7  77:12.13 system_server
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:25.40 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  2.0   0.1   6:49.10 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:00.94 top[m
+  3591 system       20   0  15G 137M  85M S  1.0   1.9  33:22.55 com.sec.androi+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.07 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.55 [kworker/u17:2+
+  1665 radio        20   0  16G 146M  97M S  0.6   2.0   4:30.36 com.android.ph+
+   843 system       20   0  12G 2.7M 2.7M S  0.6   0.0   6:50.98 vendor.samsung+
+     1 root         20   0  12G 5.4M 3.9M S  0.6   0.0   0:46.58 init second_st+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.25 [kworker/7:1-u+
+  2138 root         20   0  12G 2.7M 2.2M S  0.3   0.0   2:16.90 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.3   0.0   2:25.76 iptables-resto+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.23 com.samsung.an+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.21 com.android.sy+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.66 rild
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.09 lhd /vendor/et+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.71 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.46 netd
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.19 statsd[H[JTasks: 690 total,   2 running, 688 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6488740K used,   871504K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771304K cached
+800%cpu   1%user   0%nice   5%sys 788%idle   0%iow   3%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:25.46 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  2.0   0.1   6:49.16 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:00.97 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.09 [irq/241-dwc3]
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.58 com.sec.androi+
+  1230 system       18  -2  21G 488M 309M S  0.6   6.7  77:12.21 system_server
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:44.35 ueventd
+ 25883 root         20   0    0    0    0 I  0.3   0.0   0:00.01 [kworker/2:1-m+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.26 [kworker/7:1-u+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.77 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.57 [kworker/u17:2+
+ 24674 u0_a63       20   0  15G 120M  84M S  0.3   1.6   0:01.00 com.samsung.an+
+[1m  2138 root         20   0  12G 2.7M 2.2M R  0.3   0.0   2:16.91 ip6tables-rest+[m
+  2132 root         20   0  12G 2.8M 2.2M S  0.3   0.0   2:25.77 iptables-resto+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.24 com.samsung.an+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.58 com.android.ne+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.67 rild
+  1095 system       20   0  12G 1.4M 1.4M S  0.3   0.0   4:56.03 epic
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.72 argosd
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.07 [kworker/u19:1+[H[JTasks: 690 total,   1 running, 689 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6488652K used,   871592K free,   3538944 buffers
+ Swap:  4194300K total,   919296K used,  3275004K free,  2771308K cached
+800%cpu   5%user   1%nice  10%sys 778%idle   0%iow   3%irq   3%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  3.3   0.0   0:25.53 adbd --root_se+
+   575 logd         30  10  12G  11M 2.5M S  3.3   0.1   6:49.22 logd
+  1230 system       18  -2  21G 488M 309M S  2.0   6.7  77:12.23 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.01 top[m
+ 25658 root         RT   0    0    0    0 S  1.0   0.0   0:08.11 [irq/241-dwc3]
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.27 [kworker/7:1-u+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.78 iptables-resto+
+  1665 radio        20   0  16G 146M  97M S  0.6   2.0   4:30.38 com.android.ph+
+ 25873 root         20   0    0    0    0 I  0.3   0.0   0:00.05 [kworker/3:1-m+
+ 25656 root         20   0    0    0    0 I  0.3   0.0   0:00.11 [kworker/5:2-m+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.58 [kworker/u17:2+
+ 25031 root         20   0    0    0    0 I  0.3   0.0   0:00.21 [kworker/0:3-e+
+  2138 root         20   0  12G 2.7M 2.2M S  0.3   0.0   2:16.92 ip6tables-rest+
+  3591 system       20   0  15G 138M  85M S  0.3   1.9  33:22.60 com.sec.androi+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.22 com.android.sy+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.73 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.48 netd
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.20 statsd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.38 iod
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.15 [esgov:4][H[JTasks: 686 total,   2 running, 684 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455436K used,   904808K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771240K cached
+800%cpu   4%user   1%nice  11%sys 779%idle   0%iow   2%irq   3%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:25.63 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  2.3   0.1   6:49.32 logd
+  1230 system       18  -2  21G 488M 309M S  2.0   6.7  77:12.29 system_server
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.3   0.0 172:44.38 ueventd[m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.05 top[m
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.29 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.14 [irq/241-dwc3]
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.61 com.sec.androi+
+   644 system       20   0  12G 3.8M 3.3M S  0.6   0.0   1:47.24 android.system+
+ 25879 root         20   0    0    0    0 I  0.3   0.0   0:00.03 [kworker/1:0-m+
+ 25450 root         20   0    0    0    0 I  0.3   0.0   0:00.78 [kworker/u16:3+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.59 [kworker/u17:2+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.61 com.sec.imsser+
+  1131 audioserver  20   0  12G 1.3M 1.3M S  0.3   0.0   2:01.76 abox_log sec-a+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.68 rild
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.74 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.49 netd
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.76 [esgov:0]
+    36 root         20   0    0    0    0 S  0.3   0.0   0:05.64 [ksoftirqd/5]
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/u16:1+[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455612K used,   904632K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771240K cached
+800%cpu   4%user   1%nice  11%sys 777%idle   0%iow   4%irq   4%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  4.0   0.0   0:25.70 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  3.0   0.1   6:49.39 logd
+  1230 system       18  -2  21G 489M 309M S  2.6   6.7  77:12.35 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.6   0.0   0:01.08 top[m
+ 25658 root         RT   0    0    0    0 S  1.0   0.0   0:08.16 [irq/241-dwc3]
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.31 [kworker/7:1-u+
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.93 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.80 iptables-resto+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.63 com.sec.androi+
+  1665 radio        20   0  16G 146M  97M S  0.6   2.0   4:30.40 com.android.ph+
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.42 ueventd[m
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.60 [kworker/u17:2+
+ 20778 u0_a241      20   0  16G 204M 144M S  0.3   2.8   0:32.59 com.google.and+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.59 com.android.ne+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.69 rild
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.75 argosd
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:51.00 vendor.samsung+
+   823 system       20   0  12G 3.0M 2.8M S  0.3   0.0   5:50.34 android.hardwa+
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.50 netd
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.21 statsd[H[JTasks: 687 total,   1 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455404K used,   904840K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771248K cached
+800%cpu   3%user   0%nice   8%sys 784%idle   0%iow   3%irq   3%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  3.0   0.0   0:25.82 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  2.6   0.1   6:49.48 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.13 top[m
+ 25658 root         RT   0    0    0    0 S  1.0   0.0   0:08.19 [irq/241-dwc3]
+ 25864 root         20   0    0    0    0 I  0.6   0.0   0:02.33 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.61 [kworker/u17:2+
+     1 root         20   0  12G 5.4M 3.9M S  0.6   0.0   0:46.62 init second_st+
+ 24674 u0_a63       20   0  15G 120M  84M S  0.3   1.6   0:01.01 com.samsung.an+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.25 com.samsung.an+
+  3591 system       20   0  15G 138M  85M S  0.3   1.9  33:22.65 com.sec.androi+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.60 com.android.ne+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.23 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.42 com.android.ph+
+  1230 system       18  -2  21G 489M 309M S  0.3   6.8  77:12.43 system_server
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.70 rild
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.76 argosd
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.44 ueventd
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.60 [simpleinterac+
+   280 root         RT   0    0    0    0 S  0.3   0.0   1:28.57 [thermal_G3D]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.74 [spi7][H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455404K used,   904840K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771248K cached
+800%cpu   2%user   0%nice   8%sys 785%idle   0%iow   3%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  3.0   0.0   0:25.91 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  2.3   0.1   6:49.56 logd
+ 25421 root          0 -20    0    0    0 I  1.6   0.0   0:06.63 [kworker/u17:2+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.17 top[m
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.0   0.0 172:44.45 ueventd[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.22 [irq/241-dwc3]
+ 25896 root         20   0    0    0    0 I  0.3   0.0   0:00.00 [kworker/u16:1+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.35 [kworker/7:1-u+
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.10 lhd /vendor/et+
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.40 iod
+   590 root         20   0  12G 5.9M 5.1M S  0.3   0.0   2:53.11 vold --blkid_c+
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.16 [esgov:4]
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.77 [esgov:0]
+   278 root         RT   0    0    0    0 S  0.3   0.0   1:29.00 [thermal_MID]
+   276 root         RT   0    0    0    0 S  0.3   0.0   3:46.45 [thermal_BIG]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.75 [spi7]
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-e+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:1-m+[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455240K used,   905004K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771256K cached
+800%cpu   5%user   0%nice  11%sys 780%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 489M 309M S  3.0   6.8  77:12.44 system_server
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:26.00 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  2.0   0.1   6:49.63 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.21 top[m
+  2138 root         20   0  12G 2.7M 2.2M S  1.0   0.0   2:16.95 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.82 iptables-resto+
+  3591 system       20   0  15G 138M  85M S  1.0   1.9  33:22.66 com.sec.androi+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.24 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.68 [kworker/u17:2+
+[1m  1665 radio        20   0  16G 146M  97M R  0.6   2.0   4:30.43 com.android.ph+[m
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.51 netd
+   644 system       20   0  12G 3.8M 3.3M S  0.6   0.0   1:47.26 android.system+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.36 [kworker/7:1-u+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.26 com.samsung.an+
+ 17739 oem_5018     20   0  15G 112M  74M S  0.3   1.5   2:34.56 com.samsung.an+
+  2906 oem_5013     20   0  15G 105M  66M S  0.3   1.4   0:12.19 com.sec.locati+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.77 argosd
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:51.01 vendor.samsung+
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.22 statsd
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.14 servicemanager[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6455224K used,   905020K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771256K cached
+800%cpu   2%user   0%nice   3%sys 792%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.6   0.0   0:26.06 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.24 top[m
+   575 logd         30  10  12G  12M 2.5M S  1.3   0.1   6:49.69 logd
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.69 com.sec.androi+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.78 argosd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.37 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.26 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.70 [kworker/u17:2+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.62 com.sec.imsser+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.24 com.android.sy+
+  1630 system       20   0  12G 2.3M 2.3M S  0.3   0.0   2:38.50 mcpsd
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.71 rild
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.11 lhd /vendor/et+
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.08 [kworker/u19:1+
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.53 netd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.41 iod
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.49 ueventd[m
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.76 [spi7]
+     1 root         20   0  12G 5.4M 3.9M S  0.3   0.0   0:46.64 init second_st+
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-e+[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454616K used,   905628K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771264K cached
+800%cpu   3%user   0%nice   5%sys 788%idle   0%iow   2%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.3   0.0   0:26.11 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  2.0   0.1   6:49.73 logd
+  1230 system       18  -2  21G 489M 309M S  1.3   6.8  77:12.53 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.28 top[m
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.27 [irq/241-dwc3]
+  1665 radio        20   0  16G 146M  97M S  0.6   2.0   4:30.45 com.android.ph+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.38 [kworker/7:1-u+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.71 [kworker/u17:2+
+  2073 system       20   0  16G 131M  89M S  0.3   1.8   4:25.63 com.sec.imsser+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.25 com.android.sy+
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.42 iod
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.3   0.0 172:44.50 ueventd[m
+     1 root         20   0  12G 5.4M 3.9M S  0.3   0.0   0:46.65 init second_st+
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-e+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.01 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:1-m+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.04 [kworker/1:0-e+[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454428K used,   905816K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771264K cached
+800%cpu   3%user   0%nice   6%sys 788%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  2.0   0.0   0:26.18 adbd --root_se+
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.31 top[m
+   575 logd         30  10  12G  12M 2.5M S  1.3   0.1   6:49.79 logd
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.72 [kworker/u17:2+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.71 com.sec.androi+
+  1230 system       18  -2  21G 489M 309M S  0.6   6.8  77:12.57 system_server
+  1110 radio        20   0  12G  10M 6.7M S  0.6   0.1   0:31.72 rild
+   843 system       20   0  12G 2.7M 2.7M S  0.6   0.0   6:51.02 vendor.samsung+
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.51 ueventd[m
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.39 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.29 [irq/241-dwc3]
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.27 com.samsung.an+
+  1630 system       20   0  12G 2.3M 2.3M S  0.3   0.0   2:38.51 mcpsd
+  1106 gps          19  -1  12G 3.1M 3.1M S  0.3   0.0   7:45.12 lhd /vendor/et+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.80 argosd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.43 iod
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.17 [esgov:4]
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.61 [simpleinterac+
+   276 root         RT   0    0    0    0 S  0.3   0.0   3:46.46 [thermal_BIG]
+    31 root         20   0    0    0    0 S  0.3   0.0   3:24.50 [ksoftirqd/4][H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454184K used,   906060K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771148K cached
+800%cpu   3%user   1%nice   8%sys 784%idle   0%iow   3%irq   2%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1085 root         30  10  12G 5.6M 3.4M S  2.0   0.0   1:12.26 storaged
+   575 logd         30  10  12G  12M 2.5M S  2.0   0.1   6:49.83 logd
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.6   0.0   0:26.24 adbd --root_se+
+[1m   523 root         20   0  12G 4.7M 3.2M R  1.3   0.0 172:44.53 ueventd[m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.35 top[m
+  1230 system       18  -2  21G 490M 309M S  1.0   6.8  77:12.59 system_server
+ 25896 root         20   0    0    0    0 I  0.6   0.0   0:00.01 [kworker/u16:1+
+ 25658 root         RT   0    0    0    0 S  0.6   0.0   0:08.30 [irq/241-dwc3]
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:16.98 ip6tables-rest+
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.54 netd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.40 [kworker/7:1-u+
+  2132 root         20   0  12G 2.8M 2.2M S  0.3   0.0   2:25.85 iptables-resto+
+  3591 system       20   0  15G 138M  85M S  0.3   1.9  33:22.73 com.sec.androi+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.61 com.android.ne+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.26 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.47 com.android.ph+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.81 argosd
+   879 audioserver  20   0  12G  13M  11M S  0.3   0.1   2:14.06 audioserver
+   644 system       20   0  12G 3.8M 3.3M S  0.3   0.0   1:47.28 android.system+
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.78 [esgov:0][H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454184K used,   906060K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771148K cached
+800%cpu   5%user   1%nice   5%sys 786%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+  1230 system       18  -2  21G 490M 309M S  1.6   6.8  77:12.62 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.38 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:26.29 adbd --root_se+
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.86 iptables-resto+
+   575 logd         30  10  12G  12M 2.5M S  1.0   0.1   6:49.89 logd
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.74 [kworker/u17:2+
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:17.00 ip6tables-rest+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.74 com.sec.androi+
+[1m   523 root         20   0  12G 4.7M 3.2M R  0.6   0.0 172:44.57 ueventd[m
+ 25879 root         20   0    0    0    0 I  0.3   0.0   0:00.04 [kworker/1:0-p+
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.41 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.32 [irq/241-dwc3]
+ 25093 root         20   0    0    0    0 I  0.3   0.0   0:00.22 [kworker/4:0-e+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.28 com.samsung.an+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.62 com.android.ne+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.82 argosd
+   874 system       20   0  12G 8.1M 8.1M S  0.3   0.1   0:32.90 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.3   0.0   8:11.56 netd
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.23 statsd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.44 iod[H[JTasks: 687 total,   2 running, 685 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454184K used,   906060K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771156K cached
+800%cpu   1%user   0%nice   4%sys 792%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:26.33 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  1.3   0.1   6:49.92 logd
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.42 top[m
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.76 [kworker/u17:2+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.76 com.sec.androi+
+ 25896 root         20   0    0    0    0 I  0.3   0.0   0:00.03 [kworker/u16:1+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.33 [irq/241-dwc3]
+ 17739 oem_5018     20   0  15G 112M  74M S  0.3   1.5   2:34.57 com.samsung.an+
+  1230 system       18  -2  21G 491M 309M S  0.3   6.8  77:12.67 system_server
+   843 system       20   0  12G 2.7M 2.7M S  0.3   0.0   6:51.04 vendor.samsung+
+   280 root         RT   0    0    0    0 S  0.3   0.0   1:28.58 [thermal_G3D]
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.78 [spi7]
+   194 root         RT   0    0    0    0 S  0.3   0.0   7:44.84 [irq/374-15900+
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-m+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:1-m+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.05 [kworker/1:0-e+
+ 25876 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:2-m+[H[JTasks: 687 total,   1 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6454152K used,   906092K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771156K cached
+800%cpu   2%user   0%nice   7%sys 788%idle   0%iow   2%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.3   0.0   0:26.37 adbd --root_se+
+  1230 system       18  -2  21G 491M 309M S  1.3   6.8  77:12.68 system_server
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.0   0.0   0:01.45 top[m
+  2138 root         20   0  12G 2.7M 2.2M S  1.0   0.0   2:17.02 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  1.0   0.0   2:25.89 iptables-resto+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.78 com.sec.androi+
+  1665 radio        20   0  16G 146M  97M S  0.6   2.0   4:30.48 com.android.ph+
+  1091 system       20   0  12G 1.5M 1.4M S  0.6   0.0  27:35.83 argosd
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.57 netd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.42 [kworker/7:1-u+
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.34 [irq/241-dwc3]
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.78 [kworker/u17:2+
+  1056 u0_a117      20   0  16G 126M  87M S  0.3   1.7   0:18.98 com.samsung.an+
+ 17963 u0_a191      20   0  16G 141M  91M S  0.3   1.9  10:29.29 com.samsung.an+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.27 com.android.sy+
+  1110 radio        20   0  12G  10M 6.7M S  0.3   0.1   0:31.74 rild
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.24 statsd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.45 iod
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.17 servicemanager
+   575 logd         30  10  12G  12M 2.5M S  0.3   0.1   6:49.96 logd[H[JTasks: 687 total,   1 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6453924K used,   906320K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771164K cached
+800%cpu   3%user   0%nice   3%sys 792%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.48 top[m
+ 25648 shell        20   0  12G 5.5M 4.6M S  1.0   0.0   0:26.41 adbd --root_se+
+   575 logd         30  10  12G  12M 2.5M S  0.6   0.1   6:49.97 logd
+ 25873 root         20   0    0    0    0 I  0.3   0.0   0:00.06 [kworker/3:1-p+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.79 [kworker/u17:2+
+  1867 network_sta+ 20   0  15G 120M  82M S  0.3   1.6   3:58.63 com.android.ne+
+  1702 u0_a63       20   0  17G 289M 194M S  0.3   4.0  24:02.28 com.android.sy+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.50 com.android.ph+
+  1230 system       18  -2  21G 492M 309M S  0.3   6.8  77:12.72 system_server
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.85 argosd
+   969 root         20   0    0    0    0 I  0.3   0.0   3:25.09 [kworker/u19:1+
+   261 root         20   0    0    0    0 S  0.3   0.0  12:25.79 [spi7]
+   194 root         RT   0    0    0    0 S  0.3   0.0   7:44.85 [irq/374-15900+
+    41 root         20   0    0    0    0 S  0.3   0.0   0:03.78 [ksoftirqd/6]
+    10 root         20   0    0    0    0 I  0.3   0.0  19:10.37 [rcu_preempt]
+     1 root         20   0  12G 5.4M 3.9M S  0.3   0.0   0:46.68 init second_st+
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-m+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.04 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+[H[JTasks: 687 total,   1 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6453900K used,   906344K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771164K cached
+800%cpu   2%user   0%nice   3%sys 793%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.52 top[m
+   523 root         20   0  12G 4.7M 3.2M S  0.6   0.0 172:44.59 ueventd
+ 25658 root         RT   0    0    0    0 S  0.3   0.0   0:08.35 [irq/241-dwc3]
+ 25648 shell        20   0  12G 5.5M 4.6M S  0.3   0.0   0:26.44 adbd --root_se+
+ 25421 root          0 -20    0    0    0 I  0.3   0.0   0:06.80 [kworker/u17:2+
+  3591 system       20   0  15G 138M  85M S  0.3   1.9  33:22.80 com.sec.androi+
+  1230 system       18  -2  21G 492M 309M S  0.3   6.8  77:12.73 system_server
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.86 argosd
+   631 system       20   0  12G 1.2M 1.2M S  0.3   0.0  15:32.46 iod
+   584 root         RT   0    0    0    0 S  0.3   0.0  65:40.79 [esgov:0]
+   575 logd         30  10  12G  12M 2.5M S  0.3   0.1   6:49.99 logd
+   284 root         20   0    0    0    0 S  0.3   0.0  22:57.63 [simpleinterac+
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-e+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.04 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh
+ 25884 shell        20   0  12G 2.5M 2.0M S  0.0   0.0   0:00.01 sh -c top > /s+
+ 25883 root         20   0    0    0    0 I  0.0   0.0   0:00.02 [kworker/2:1-m+
+ 25880 root         20   0    0    0    0 I  0.0   0.0   0:00.08 [kworker/u16:0+
+ 25879 root         20   0    0    0    0 I  0.0   0.0   0:00.05 [kworker/1:0-p+
+ 25876 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/6:2-m+[H[JTasks: 687 total,   1 running, 686 sleeping,   0 stopped,   0 zombie
+  Mem:  7360244K total,  6453672K used,   906572K free,   3538944 buffers
+ Swap:  4194300K total,   919040K used,  3275260K free,  2771172K cached
+800%cpu   3%user   0%nice   6%sys 788%idle   0%iow   1%irq   1%sirq   0%host
+[7m   PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS           [0m
+[1m 25888 shell        20   0  12G 4.8M 3.3M R  1.3   0.0   0:01.56 top[m
+  1230 system       18  -2  21G 492M 309M S  1.0   6.8  77:12.74 system_server
+ 25648 shell        20   0  12G 5.5M 4.6M S  0.6   0.0   0:26.45 adbd --root_se+
+ 25421 root          0 -20    0    0    0 I  0.6   0.0   0:06.81 [kworker/u17:2+
+  2138 root         20   0  12G 2.7M 2.2M S  0.6   0.0   2:17.05 ip6tables-rest+
+  2132 root         20   0  12G 2.8M 2.2M S  0.6   0.0   2:25.92 iptables-resto+
+  3591 system       20   0  15G 138M  85M S  0.6   1.9  33:22.81 com.sec.androi+
+   843 system       20   0  12G 2.7M 2.7M S  0.6   0.0   6:51.05 vendor.samsung+
+   792 root         20   0  12G 6.4M 5.1M S  0.6   0.0   8:11.59 netd
+   575 logd         30  10  12G  12M 2.5M S  0.6   0.1   6:50.00 logd
+ 25864 root         20   0    0    0    0 I  0.3   0.0   0:02.43 [kworker/7:1-u+
+  1665 radio        20   0  16G 146M  97M S  0.3   2.0   4:30.51 com.android.ph+
+  1091 system       20   0  12G 1.5M 1.4M S  0.3   0.0  27:35.87 argosd
+   791 statsd       20   0  12G 8.7M 3.3M S  0.3   0.1   4:38.25 statsd
+   587 root         RT   0    0    0    0 S  0.3   0.0  18:31.18 [esgov:4]
+   577 system       20   0  12G 3.3M 3.0M S  0.3   0.0   3:13.18 servicemanager
+   523 root         20   0  12G 4.7M 3.2M S  0.3   0.0 172:44.61 ueventd
+ 25899 root         20   0    0    0    0 I  0.0   0.0   0:00.00 [kworker/0:1-e+
+ 25896 root         20   0    0    0    0 I  0.0   0.0   0:00.04 [kworker/u16:1+
+ 25891 shell        20   0  12G 2.8M 2.2M S  0.0   0.0   0:00.03 sh[?25h[0m[1000;1H[K[?25h[?25h[0m[1000;1H[K

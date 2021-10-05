@@ -1,0 +1,1 @@
+    Log: game fps=8, actual fps=30, interpolated fps=30, missed fps=18, repeated fps=0

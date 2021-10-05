@@ -1,0 +1,1 @@
+ 32168 u0_a296      10 -10  18G 881M 410M S  169  12.2 123:37.53 com.miHoYo.GenshinImpact
