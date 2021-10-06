@@ -24,7 +24,7 @@ global cpu_result, gpu_result, fps_result, network_result
 global temp0, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8 
 #############
 
-max_num = 600
+max_num = 10
 
 cpu_result = []
 gpu_result = []
@@ -140,6 +140,16 @@ def shell_plot(x):
 
     plt.tight_layout()
     plt.show()
+    
+def data_save(num):
+    f = open('temp.txt', 'w')
+    for i in range(num):
+        f.write(str(temp0[i]) + "\n")
+    # f.write('------')
+    # f.write(temp1)
+    # f.write('------')
+    f.close()
 
 shell_repeat(max_num)
 shell_plot(x)
+data_save(max_num)
