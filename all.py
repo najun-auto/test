@@ -26,7 +26,8 @@ global ctemp0, ctemp1, ctemp2, ctemp3, ctemp4, ctemp5, ctemp6, ctemp7
 #############
 
 
-
+print("///////////  ADB + 루팅 연결되어 있어야 작동 가능 //////////")
+print("///////////  Track Time은 추적할 시간 입력(단위:초) //////////")
 max_num = int(input('Track Time: '))
 
 cpu_result = []
@@ -207,8 +208,8 @@ def shell_plot(x):
     # # plt.plot(x, ctemp5, 'g', label='cpu5')
     # # plt.plot(x, ctemp6, 'g', label='cpu6')
     # plt.plot(x, ctemp7, 'b', label='cpu7')
-    # # plt.title('CPU Freq')
-    # # plt.legend(loc='lower left', mode='expand', ncol=3)
+    # plt.title('CPU Freq')
+    # plt.legend(loc='right')
     # # plt.tight_layout()
 
 

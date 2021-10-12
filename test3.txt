@@ -1,7 +1,0 @@
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
-14% TOTAL: 6.2% user + 5.8% kernel + 0% iowait + 1.1% irq + 0.7% softirq
