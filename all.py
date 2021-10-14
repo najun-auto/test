@@ -81,6 +81,7 @@ def shell_repeat(num):
     global temp0, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8
     global ctemp0, ctemp1, ctemp2, ctemp3, ctemp4, ctemp5, ctemp6, ctemp7
     old_network = 0
+    old_fps = 0
     for i in range(num):
         if 0: ## app cpu
             cpu_usage.append(device.shell("top -b -n1 | grep " + app_name + " | head -n1"))
@@ -120,10 +121,25 @@ def shell_repeat(num):
         gpu_usage.append(device.shell("cat /sys/devices/platform/18500000.mali/utilization"))
         gpu_result.append(float((gpu_usage[i].split())[0]))
         
-        fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep Log "))
-        temp_data = fps_usage[i].split()
-        numbers = re.sub(r'[^0-9]', '', temp_data[2])
-        fps_result.append(float(numbers))
+        
+        
+        if not str(device.shell("dumpsys SurfaceFlinger | grep Log ")):
+            # fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep default-format=4 "))
+            fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 "))
+            
+            temp_data = fps_usage[i].split()
+            numbers = re.sub(r'[^0-9]', '', temp_data[3])
+            fps_final = int(numbers) - old_fps
+            print("first : "+str(fps_final))
+            fps_result.append(float(fps_final))
+            old_fps = int(numbers)
+        else:
+            fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep Log "))
+            temp_data = fps_usage[i].split()
+            numbers = re.sub(r'[^0-9]', '', temp_data[2])
+            print("second: "+numbers)
+            fps_result.append(float(numbers))
+
 
         # network_usage.append(device.shell("cat /proc/net/dev | grep rmnet1| tail -n1"))
         # recv = (network_usage[i].split())[1]
@@ -170,6 +186,7 @@ def shell_plot(x):
 
     
     plt.subplot(511)
+    fps_result[0] = 0
     plt.plot(x, fps_result, 'C3')
     plt.title('FPS')
     
