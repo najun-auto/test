@@ -122,24 +122,50 @@ def shell_repeat(num):
         gpu_result.append(float((gpu_usage[i].split())[0]))
         
         
-        
-        if not str(device.shell("dumpsys SurfaceFlinger | grep Log ")):
-            # fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep default-format=4 "))
+        # if not str(device.shell("dumpsys SurfaceFlinger | grep Log ")):
+        #     # fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep default-format=4 "))
+        if str(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 ")):
+            # print("/////////////////1////////////////")
             fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 "))
-            
-            temp_data = fps_usage[i].split()
-            numbers = re.sub(r'[^0-9]', '', temp_data[3])
+            ftemp_data = fps_usage[i].split()
+            numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
             fps_final = int(numbers) - old_fps
-            print("first : "+str(fps_final))
+
+            if int(fps_final) < 0: 
+                fps_final = 0
+            # print("first : "+str(fps_final))
             fps_result.append(float(fps_final))
             old_fps = int(numbers)
-        else:
-            fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep Log "))
-            temp_data = fps_usage[i].split()
-            numbers = re.sub(r'[^0-9]', '', temp_data[2])
-            print("second: "+numbers)
-            fps_result.append(float(numbers))
+        elif str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")):
+            # print(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
+            fps_usage.append(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
 
+
+            ftemp_data = fps_usage[i].split()
+            # print(ftemp_data[3])
+        
+            numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
+            
+            fps_final = int(numbers) - old_fps
+
+            if int(fps_final) < 0: 
+                fps_final = 0
+            # print("first : "+str(fps_final))
+            fps_result.append(float(fps_final))
+            old_fps = int(numbers)
+                    
+        elif str(device.shell("dumpsys SurfaceFlinger | grep Log ")):      
+            # print("/////////////////3////////////////")    
+            fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep Log "))
+            ftemp_data = fps_usage[i].split()
+            numbers = re.sub(r'[^0-9]', '', ftemp_data[2])
+            # print("second: "+numbers)
+        else:
+            fps_usage.append(str(0))
+            # print("/////////////////4////////////////")
+            old_fps = 0
+            numbers = 0
+            fps_result.append(float(numbers))
 
         # network_usage.append(device.shell("cat /proc/net/dev | grep rmnet1| tail -n1"))
         # recv = (network_usage[i].split())[1]
