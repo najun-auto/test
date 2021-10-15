@@ -131,7 +131,7 @@ def shell_repeat(num):
             numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
             fps_final = int(numbers) - old_fps
 
-            if int(fps_final) < 0 and int(fps_final) > 121: 
+            if int(fps_final) < 0 or int(fps_final) > 121: 
                 fps_final = 0
             
             # print("first : "+str(fps_final))
@@ -149,7 +149,7 @@ def shell_repeat(num):
             
             fps_final = int(numbers) - old_fps
 
-            if int(fps_final) < 0 and int(fps_final) > 121:
+            if int(fps_final) < 0 or int(fps_final) > 121:
                 fps_final = 0
             # print("first : "+str(fps_final))
             fps_result.append(float(fps_final))
