@@ -255,13 +255,17 @@ def shell_repeat(num):
                 numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
                 fps_final = int(numbers) - old_fps
 
-                if int(fps_final) < 0 or int(fps_final) > 121: 
-                    fps_final = old_fps
+                # if int(fps_final) < 0 or int(fps_final) > 121: 
+                #     fps_final = old_fps
                 
+                if int(fps_final) < 0:
+                        fps_final = 0
+                elif int(fps_final) > 121:
+                        fps_final = 120
                 # print("first : "+str(fps_final))
                 fps_result.append(float(fps_final))
                 old_fps = int(numbers)
-            elif str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")):  # youtube
+            elif str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")):  # youtube, xbox
                 # print(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
                 fps_usage.append(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
 
@@ -273,10 +277,12 @@ def shell_repeat(num):
                     
                     fps_final = int(numbers) - old_fps
 
-                    if int(fps_final) < 0 or int(fps_final) > 121:
-                        fps_final = old_fps
+                    if int(fps_final) < 0:
+                        fps_final = 0
+                    elif int(fps_final) > 121:
+                        fps_final = 120
                 except:
-                        fps_final = old_fps
+                        fps_final = 0
                 # print("first : "+str(fps_final))
                 fps_result.append(float(fps_final))
                 old_fps = int(numbers)
@@ -332,7 +338,7 @@ def shell_repeat(num):
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
         
-        time.sleep(0.8)
+        time.sleep(0.75)
 
 
 
