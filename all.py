@@ -106,6 +106,7 @@ def shell_repeat(num):
     d_steal = 0
     d_guest = 0
     d_guest_nice = 0
+    cur_cpu_usage = 0
 
     for i in range(num):
         # if 0: ## app cpu
@@ -173,10 +174,11 @@ def shell_repeat(num):
                     cpu_cur_c = cpu_c[j] + cpu_cur_c
 
                 cpu_result.append(cpu_cur_c/8)
+                cur_cpu_usage = cpu_cur_c/8
 
             old_cpu_test = cpu_test
 
-        if 0:
+        if 1:
             if 0:
                 cpu_result.append(0) 
                 ctemp0.append(float(0))
@@ -188,30 +190,30 @@ def shell_repeat(num):
                 ctemp6.append(float(0))
                 ctemp7.append(float(0))
                 cpu_normal_result.append(0)
-            else:    
+            elif 0:    
                 ctemp0_usage.append(device.shell("cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq"))
                 ctemp0.append(float((ctemp0_usage[i].split())[0]))
                 ctemp0_max = device.shell("cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq")
                 cpu_n[0] =  (cpu_c[0] * ( int((ctemp0_usage[i].split())[0])/int(ctemp0_max)))
                 # cpu_n.append(cpu_c[0] * ( int((ctemp0_usage[i].split())[0])/int(ctemp0_max)))
 
-                ctemp1_usage.append(device.shell("cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq"))
-                ctemp1.append(float((ctemp1_usage[i].split())[0]))
-                ctemp1_max = device.shell("cat /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_max_freq")
-                cpu_n[1] = (cpu_c[1] * ( int((ctemp0_usage[i].split())[0])/int(ctemp1_max)))
-                # cpu_n.append(cpu_c[1] * ( int((ctemp0_usage[i].split())[0])/int(ctemp1_max)))
+                # ctemp1_usage.append(device.shell("cat /sys/devices/system/cpu/cpu1/cpufreq/scaling_cur_freq"))
+                # ctemp1.append(float((ctemp1_usage[i].split())[0]))
+                # ctemp1_max = device.shell("cat /sys/devices/system/cpu/cpu1/cpufreq/cpuinfo_max_freq")
+                # cpu_n[1] = (cpu_c[1] * ( int((ctemp0_usage[i].split())[0])/int(ctemp1_max)))
+                # # cpu_n.append(cpu_c[1] * ( int((ctemp0_usage[i].split())[0])/int(ctemp1_max)))
                 
-                ctemp2_usage.append(device.shell("cat /sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq"))
-                ctemp2.append(float((ctemp2_usage[i].split())[0]))
-                ctemp2_max = device.shell("cat /sys/devices/system/cpu/cpu2/cpufreq/cpuinfo_max_freq")
-                cpu_n[2] = (cpu_c[2] * ( int((ctemp2_usage[i].split())[0])/int(ctemp2_max)))
-                # cpu_n.append(cpu_c[2] * ( int((ctemp2_usage[i].split())[0])/int(ctemp2_max)))
+                # ctemp2_usage.append(device.shell("cat /sys/devices/system/cpu/cpu2/cpufreq/scaling_cur_freq"))
+                # ctemp2.append(float((ctemp2_usage[i].split())[0]))
+                # ctemp2_max = device.shell("cat /sys/devices/system/cpu/cpu2/cpufreq/cpuinfo_max_freq")
+                # cpu_n[2] = (cpu_c[2] * ( int((ctemp2_usage[i].split())[0])/int(ctemp2_max)))
+                # # cpu_n.append(cpu_c[2] * ( int((ctemp2_usage[i].split())[0])/int(ctemp2_max)))
 
-                ctemp3_usage.append(device.shell("cat /sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq"))
-                ctemp3.append(float((ctemp3_usage[i].split())[0]))
-                ctemp3_max = device.shell("cat /sys/devices/system/cpu/cpu3/cpufreq/cpuinfo_max_freq")
-                cpu_n[3] = (cpu_c[3] * ( int((ctemp3_usage[i].split())[0])/int(ctemp3_max)))
-                # cpu_n.append(cpu_c[3] * ( int((ctemp3_usage[i].split())[0])/int(ctemp3_max)))
+                # ctemp3_usage.append(device.shell("cat /sys/devices/system/cpu/cpu3/cpufreq/scaling_cur_freq"))
+                # ctemp3.append(float((ctemp3_usage[i].split())[0]))
+                # ctemp3_max = device.shell("cat /sys/devices/system/cpu/cpu3/cpufreq/cpuinfo_max_freq")
+                # cpu_n[3] = (cpu_c[3] * ( int((ctemp3_usage[i].split())[0])/int(ctemp3_max)))
+                # # cpu_n.append(cpu_c[3] * ( int((ctemp3_usage[i].split())[0])/int(ctemp3_max)))
             
                 ctemp4_usage.append(device.shell("cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_cur_freq"))
                 ctemp4.append(float((ctemp4_usage[i].split())[0]))
@@ -219,11 +221,11 @@ def shell_repeat(num):
                 cpu_n[4] = (cpu_c[4] * ( int((ctemp4_usage[i].split())[0])/int(ctemp4_max)))
                 # cpu_n.append(cpu_c[4] * ( int((ctemp4_usage[i].split())[0])/int(ctemp4_max)))
                 
-                ctemp5_usage.append(device.shell("cat /sys/devices/system/cpu/cpu5/cpufreq/scaling_cur_freq"))
-                ctemp5.append(float((ctemp5_usage[i].split())[0]))
-                ctemp5_max = device.shell("cat /sys/devices/system/cpu/cpu5/cpufreq/cpuinfo_max_freq")
-                cpu_n[5] = (cpu_c[5] * ( int((ctemp5_usage[i].split())[0])/int(ctemp5_max)))
-                # cpu_n.append(cpu_c[5] * ( int((ctemp5_usage[i].split())[0])/int(ctemp5_max)))
+                # ctemp5_usage.append(device.shell("cat /sys/devices/system/cpu/cpu5/cpufreq/scaling_cur_freq"))
+                # ctemp5.append(float((ctemp5_usage[i].split())[0]))
+                # ctemp5_max = device.shell("cat /sys/devices/system/cpu/cpu5/cpufreq/cpuinfo_max_freq")
+                # cpu_n[5] = (cpu_c[5] * ( int((ctemp5_usage[i].split())[0])/int(ctemp5_max)))
+                # # cpu_n.append(cpu_c[5] * ( int((ctemp5_usage[i].split())[0])/int(ctemp5_max)))
             
                 ctemp6_usage.append(device.shell("cat /sys/devices/system/cpu/cpu6/cpufreq/scaling_cur_freq"))
                 ctemp6.append(float((ctemp6_usage[i].split())[0]))
@@ -231,13 +233,35 @@ def shell_repeat(num):
                 cpu_n[6] = (cpu_c[6] * ( int((ctemp6_usage[i].split())[0])/int(ctemp6_max)))
                 # cpu_n.append(cpu_c[6] * ( int((ctemp6_usage[i].split())[0])/int(ctemp6_max)))
                 
-                ctemp7_usage.append(device.shell("cat /sys/devices/system/cpu/cpu7/cpufreq/scaling_cur_freq"))
-                ctemp7.append(float((ctemp7_usage[i].split())[0]))
-                ctemp7_max = device.shell("cat /sys/devices/system/cpu/cpu7/cpufreq/cpuinfo_max_freq")
-                cpu_n[7] = (cpu_c[7] * ( int((ctemp7_usage[i].split())[0])/int(ctemp7_max)))
-                # cpu_n.append(cpu_c[7] * ( int((ctemp7_usage[i].split())[0])/int(ctemp7_max)))
+                # ctemp7_usage.append(device.shell("cat /sys/devices/system/cpu/cpu7/cpufreq/scaling_cur_freq"))
+                # ctemp7.append(float((ctemp7_usage[i].split())[0]))
+                # ctemp7_max = device.shell("cat /sys/devices/system/cpu/cpu7/cpufreq/cpuinfo_max_freq")
+                # cpu_n[7] = (cpu_c[7] * ( int((ctemp7_usage[i].split())[0])/int(ctemp7_max)))
+                # # cpu_n.append(cpu_c[7] * ( int((ctemp7_usage[i].split())[0])/int(ctemp7_max)))
                 
-                cpu_normal_result.append((cpu_n[0] + cpu_n[1]+ cpu_n[2]+ cpu_n[3]+ cpu_n[4]+ cpu_n[5]+ cpu_n[6]+ cpu_n[7])/8)
+                # cpu_normal_result.append((cpu_n[0] + cpu_n[1]+ cpu_n[2]+ cpu_n[3]+ cpu_n[4]+ cpu_n[5]+ cpu_n[6]+ cpu_n[7])/8)
+                cpu_normal_result.append(( (cpu_n[0]*4) + (cpu_n[4] * 2) + (cpu_n[6]*2) )/8)
+            else:
+                ctemp0_usage.append(device.shell("cat /sys/devices/system/cpu/cpu0/cpufreq/scaling_cur_freq"))
+                ctemp0.append(float((ctemp0_usage[i].split())[0]))
+                ctemp0_max = device.shell("cat /sys/devices/system/cpu/cpu0/cpufreq/cpuinfo_max_freq")
+
+                ctemp4_usage.append(device.shell("cat /sys/devices/system/cpu/cpu4/cpufreq/scaling_cur_freq"))
+                ctemp4.append(float((ctemp4_usage[i].split())[0]))
+                ctemp4_max = device.shell("cat /sys/devices/system/cpu/cpu4/cpufreq/cpuinfo_max_freq")
+                cpu_n[4] = (cpu_c[4] * ( int((ctemp4_usage[i].split())[0])/int(ctemp4_max)))
+
+                ctemp6_usage.append(device.shell("cat /sys/devices/system/cpu/cpu6/cpufreq/scaling_cur_freq"))
+                ctemp6.append(float((ctemp6_usage[i].split())[0]))
+                ctemp6_max = device.shell("cat /sys/devices/system/cpu/cpu6/cpufreq/cpuinfo_max_freq")
+                cpu_n[6] = (cpu_c[6] * ( int((ctemp6_usage[i].split())[0])/int(ctemp6_max)))
+
+                total_max_freq = int(ctemp0_max)*4 + int(ctemp4_max)*2 + int(ctemp6_max)*2
+                total_cur_freq = int((ctemp0_usage[i].split())[0])*4 + int((ctemp4_usage[i].split())[0])*2 + int((ctemp6_usage[i].split())[0])*2
+
+                total_cpu_n = cur_cpu_usage * (total_cur_freq/total_max_freq) 
+
+                cpu_normal_result.append(total_cpu_n)
 
         if 1:
             gpu_usage.append(device.shell("cat /sys/devices/platform/18500000.mali/utilization"))
@@ -408,11 +432,11 @@ def data_avg(num):
     avg_cpu = total_cpu / num
     print("average cpu : " + str(avg_cpu))
 
-    # total_cpu_n = 0
-    # for i in range(num):
-    #     total_cpu_n = int(cpu_normal_result[i]) + total_cpu_n
-    # avg_cpu_n = total_cpu_n / num
-    # print("average cpu normalized : " + str(avg_cpu_n))
+    total_cpu_n = 0
+    for i in range(num):
+        total_cpu_n = int(cpu_normal_result[i]) + total_cpu_n
+    avg_cpu_n = total_cpu_n / num
+    print("average cpu normalized : " + str(avg_cpu_n))
 
     total_gpu = 0
     for i in range(num):
@@ -425,6 +449,7 @@ def data_avg(num):
         total_net = int(network_result[i]) + total_net
     avg_net = total_net / num
     print("average network(KB/s) : " + str(avg_net))
+
 
 def data_save(num):
     f = open('temp_record.txt', 'w')
