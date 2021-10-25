@@ -318,6 +318,7 @@ def shell_repeat(num):
                 numbers = re.sub(r'[^0-9]', '', ftemp_data[2])
                 # print("second: "+numbers)
             else:
+                old_fps = 0
                 fps_usage.append(str(old_fps))
                 # print("/////////////////4////////////////")
                 old_fps = old_fps
@@ -362,7 +363,7 @@ def shell_repeat(num):
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
         
-        time.sleep(0.75)
+        time.sleep(0.8) #0.75 perfdog
 
 
 
