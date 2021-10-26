@@ -33,6 +33,7 @@ max_num = int(input('Track Time: '))
 cpu_result = []
 cpu_normal_result = []
 gpu_result = []
+gpu_clock_result = []
 fps_result = []
 network_result = []
 temp0 = []
@@ -80,7 +81,7 @@ def shell_repeat(num):
     
     cpu_n = []
     
-    global cpu_result, gpu_result, fps_result, network_result, cpu_freq_result
+    global cpu_result, gpu_result, fps_result, network_result, cpu_freq_result, gpu_clock_result
     global temp0, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8
     global ctemp0, ctemp1, ctemp2, ctemp3, ctemp4, ctemp5, ctemp6, ctemp7
     old_network = 0
@@ -267,6 +268,10 @@ def shell_repeat(num):
             gpu_usage.append(device.shell("cat /sys/devices/platform/18500000.mali/utilization"))
             gpu_result.append(float((gpu_usage[i].split())[0]))
             
+            gpu_cur_clock =  device.shell("cat /sys/devices/platform/18500000.mali/clock")
+            gpu_normal_usage = int(gpu_cur_clock)/702000 * float((gpu_usage[i].split())[0])
+            gpu_clock_result.append( gpu_normal_usage)
+
         
         if 1:
             # if not str(device.shell("dumpsys SurfaceFlinger | grep Log ")):
@@ -363,7 +368,7 @@ def shell_repeat(num):
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
         
-        time.sleep(0.8) #0.75 perfdog
+        time.sleep(0.75) #0.75 perfdog #gamebench
 
 
 
@@ -444,6 +449,13 @@ def data_avg(num):
         total_gpu = int(gpu_result[i]) + total_gpu
     avg_gpu = total_gpu / num
     print("average gpu : " + str(avg_gpu))
+
+    total_gpu_n = 0
+    for i in range(num):
+        total_gpu_n = int(gpu_clock_result[i]) + total_gpu_n
+    avg_gpu_n = total_gpu_n / num
+    print("average gpu normalized : " + str(avg_gpu_n))
+
 
     total_net = 0
     for i in range(num):
