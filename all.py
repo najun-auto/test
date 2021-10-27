@@ -368,7 +368,7 @@ def shell_repeat(num):
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
         
-        time.sleep(0.75) #0.75 perfdog #gamebench
+        time.sleep(1) #0.75 perfdog #gamebench
 
 
 
@@ -470,43 +470,57 @@ def data_save(num):
         f.write(str(temp0[i]) + "\n")
     f.write('------temp0 \n')
 
-    for i in range(num):
-        f.write(str(temp1[i]) + "\n")
-    f.write('------temp1 \n')
+    # for i in range(num):
+    #     f.write(str(temp1[i]) + "\n")
+    # f.write('------temp1 \n')
 
-    for i in range(num):
-        f.write(str(temp2[i]) + "\n")
-    f.write('------temp2 \n')
+    # for i in range(num):
+    #     f.write(str(temp2[i]) + "\n")
+    # f.write('------temp2 \n')
 
-    for i in range(num):
-        f.write(str(temp3[i]) + "\n")
-    f.write('------temp3 \n')
+    # for i in range(num):
+    #     f.write(str(temp3[i]) + "\n")
+    # f.write('------temp3 \n')
 
-    for i in range(num):
-        f.write(str(temp4[i]) + "\n")
-    f.write('------temp4 \n')
+    # for i in range(num):
+    #     f.write(str(temp4[i]) + "\n")
+    # f.write('------temp4 \n')
 
-    for i in range(num):
-        f.write(str(temp5[i]) + "\n")
-    f.write('------temp5 \n')
+    # for i in range(num):
+    #     f.write(str(temp5[i]) + "\n")
+    # f.write('------temp5 \n')
 
-    for i in range(num):
-        f.write(str(temp6[i]) + "\n")
-    f.write('------temp6 \n')
+    # for i in range(num):
+    #     f.write(str(temp6[i]) + "\n")
+    # f.write('------temp6 \n')
 
-    for i in range(num):
-        f.write(str(temp7[i]) + "\n")
-    f.write('------temp7 \n')
+    # for i in range(num):
+    #     f.write(str(temp7[i]) + "\n")
+    # f.write('------temp7 \n')
 
-    for i in range(num):
-        f.write(str(temp8[i]) + "\n")
-    f.write('------temp8 \n')
+    # for i in range(num):
+    #     f.write(str(temp8[i]) + "\n")
+    # f.write('------temp8 \n')
     
     # f.write(temp1)
     # f.write('------')
     f.close()
 
+
+    f = open('cpu_record.txt', 'w')
+    for i in range(num):
+        f.write(str(cpu_result[i]) + "\n")
+    f.write('------cpu \n')
+    f.close()
+
+    f = open('gpu_record.txt', 'w')
+    for i in range(num):
+        f.write(str(gpu_result[i]) + "\n")
+    f.write('------gpu \n')
+
+    f.close()
+
 shell_repeat(max_num)
 shell_plot(x)
-# data_save(max_num)
+data_save(max_num)
 data_avg(max_num)
