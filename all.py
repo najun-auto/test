@@ -411,7 +411,7 @@ def shell_plot(x):
     plt.subplot(614)
     plt.plot(x, dram_freq_result, 'C4')
     plt.title('dram_freq')
-
+#
 
     # plt.subplot(615)
     # network_result[0] = 0
