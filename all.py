@@ -340,7 +340,7 @@ def shell_repeat(num):
             if network_temp != old_network:
                 old_network = (int(recv) + int(send))
 
-        if 0:
+        if 1:
             temp0_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone0/temp"))
             temp0.append(float((temp0_usage[i].split())[0]))
 
@@ -504,14 +504,14 @@ def data_save(num):
     
     # f.write(temp1)
     # f.write('------')
-    f.close()
+    # f.close()
 
 
     f = open('cpu_record.txt', 'w')
     for i in range(num):
         f.write(str(cpu_result[i]) + "\n")
     f.write('------cpu \n')
-    f.close()
+    # f.close()
 
     f = open('gpu_record.txt', 'w')
     for i in range(num):
