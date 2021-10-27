@@ -20,7 +20,7 @@ fps_result_file = "fps"
 recv_result_file = "recv"
 send_result_file = "sned"
 max_cpu_usage = 800
-global cpu_result, gpu_result, fps_result, network_result
+global cpu_result, gpu_result, fps_result, network_result, dram_freq_result
 global temp0, temp1, temp2, temp3, temp4, temp5, temp6, temp7, temp8 
 global ctemp0, ctemp1, ctemp2, ctemp3, ctemp4, ctemp5, ctemp6, ctemp7
 #############
@@ -32,6 +32,7 @@ max_num = int(input('Track Time: '))
 
 cpu_result = []
 cpu_normal_result = []
+dram_freq_result = []
 gpu_result = []
 gpu_clock_result = []
 fps_result = []
@@ -264,6 +265,12 @@ def shell_repeat(num):
 
                 cpu_normal_result.append(total_cpu_n)
 
+
+        if 1:
+            dram_freq = device.shell("su -c /data/local/tmp/clk_s.sh -d")
+            # print((dram_freq.split())[1])
+            dram_freq_result.append( int((dram_freq.split())[1]))
+
         if 1:
             gpu_usage.append(device.shell("cat /sys/devices/platform/18500000.mali/utilization"))
             gpu_result.append(float((gpu_usage[i].split())[0]))
@@ -368,57 +375,61 @@ def shell_repeat(num):
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
         
-        time.sleep(1) #0.75 perfdog #gamebench
+        time.sleep(0.75) #0.75 perfdog #gamebench
 
 
 
 def shell_plot(x):
 
     
-    plt.subplot(511)
+    plt.subplot(611)
     fps_result[0] = 0
     plt.plot(x, fps_result, 'C3')
     plt.title('FPS')
     
-    plt.subplot(512)
-    plt.plot(x, cpu_result, 'C1')
+    plt.subplot(612)
+    plt.plot(x, cpu_normal_result, 'C1')
     plt.title('CPU Usage')
 
-    # plt.subplot(513)
-    # plt.plot(x, ctemp0, 'r', label='cpu0')
-    # # plt.plot(x, ctemp1, 'r', label='cpu1')
-    # # plt.plot(x, ctemp2, 'r', label='cpu2')
-    # # plt.plot(x, ctemp3, 'r', label='cpu3')
-    # plt.plot(x, ctemp4, 'g', label='cpu4')
-    # # plt.plot(x, ctemp5, 'g', label='cpu5')
-    # # plt.plot(x, ctemp6, 'g', label='cpu6')
+    plt.subplot(613)
+    plt.plot(x, ctemp0, 'r', label='cpu0')
+    # plt.plot(x, ctemp1, 'r', label='cpu1')
+    # plt.plot(x, ctemp2, 'r', label='cpu2')
+    # plt.plot(x, ctemp3, 'r', label='cpu3')
+    plt.plot(x, ctemp4, 'b', label='cpu4')
+    # plt.plot(x, ctemp5, 'g', label='cpu5')
+    plt.plot(x, ctemp6, 'g', label='cpu6')
     # plt.plot(x, ctemp7, 'b', label='cpu7')
-    # plt.title('CPU Freq')
-    # # plt.legend(loc='right')
-    # # plt.tight_layout()
+    plt.title('CPU Freq')
+    # plt.legend(loc='right')
+    # plt.tight_layout()
 
-    plt.subplot(514)
-    plt.plot(x, gpu_result, 'C10')
+    plt.subplot(615)
+    plt.plot(x, gpu_clock_result, 'C10')
     plt.title('GPU Usage')
 
+    plt.subplot(614)
+    plt.plot(x, dram_freq_result, 'C4')
+    plt.title('dram_freq')
 
-    plt.subplot(515)
-    network_result[0] = 0
-    plt.plot(x, network_result, 'C4')
-    plt.title('network')
 
-    # plt.subplot(515)
-    # plt.plot(x, temp0, 'C5', label='temp0')
-    # # plt.plot(x, temp1, 'C6', label='temp1')
-    # # plt.plot(x, temp2, 'C7', label='temp2')
-    # # plt.plot(x, temp3, 'C8', label='temp3')
-    # # plt.plot(x, temp4, 'C9', label='temp4')
-    # # plt.plot(x, temp5, 'C10', label='temp5')
-    # # plt.plot(x, temp6, 'C11', label='temp6')
-    # # plt.plot(x, temp7, 'C12', label='temp7')
-    # # plt.plot(x, temp8, 'C13', label='temp8')
-    # plt.title('temp')
-    # # plt.legend(loc="right")
+    # plt.subplot(615)
+    # network_result[0] = 0
+    # plt.plot(x, network_result, 'C4')
+    # plt.title('network')
+
+    plt.subplot(616)
+    plt.plot(x, temp0, 'C5', label='temp0')
+    # plt.plot(x, temp1, 'C6', label='temp1')
+    # plt.plot(x, temp2, 'C7', label='temp2')
+    # plt.plot(x, temp3, 'C8', label='temp3')
+    # plt.plot(x, temp4, 'C9', label='temp4')
+    # plt.plot(x, temp5, 'C10', label='temp5')
+    # plt.plot(x, temp6, 'C11', label='temp6')
+    # plt.plot(x, temp7, 'C12', label='temp7')
+    # plt.plot(x, temp8, 'C13', label='temp8')
+    plt.title('temp')
+    # plt.legend(loc="right")
 
 
 
@@ -506,17 +517,44 @@ def data_save(num):
     # f.write('------')
     # f.close()
 
-
-    f = open('cpu_record.txt', 'w')
+    f = open('fps_record.txt', 'w')
     for i in range(num):
-        f.write(str(cpu_result[i]) + "\n")
-    f.write('------cpu \n')
+        f.write(str(fps_result[i]) + "\n")
+    f.write('------fps \n')
     # f.close()
 
-    f = open('gpu_record.txt', 'w')
+
+    # f = open('cpu_record.txt', 'w')
+    # for i in range(num):
+    #     f.write(str(cpu_result[i]) + "\n")
+    # f.write('------cpu \n')
+    # # f.close()
+
+    f = open('cpu_normal_record.txt', 'w')
     for i in range(num):
-        f.write(str(gpu_result[i]) + "\n")
-    f.write('------gpu \n')
+        f.write(str(cpu_normal_result[i]) + "\n")
+    f.write('------cpu normal \n')
+
+    f = open('cpu_freq_0_record.txt', 'w')
+    for i in range(num):
+        f.write(str(ctemp0[i]) + "\n")
+    f.write('------cpu freq 0 \n')
+
+    f = open('cpu_freq_4_record.txt', 'w')
+    for i in range(num):
+        f.write(str(ctemp4[i]) + "\n")
+    f.write('------cpu freq 4 \n')
+
+    f = open('cpu_freq_6_record.txt', 'w')
+    for i in range(num):
+        f.write(str(ctemp6[i]) + "\n")
+    f.write('------cpu freq 6 \n')
+
+    # f = open('gpu_record.txt', 'w')
+    # for i in range(num):
+    #     f.write(str(gpu_result[i]) + "\n")
+    # f.write('------gpu \n')
+
 
     f.close()
 
