@@ -284,24 +284,8 @@ def shell_repeat(num):
             # if not str(device.shell("dumpsys SurfaceFlinger | grep Log ")):
             #     # fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep default-format=4 "))
             # if str(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 ")):
-            if 0:    
-                # print("/////////////////1////////////////")
-                fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 "))
-                ftemp_data = fps_usage[i].split()
-                numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
-                fps_final = int(numbers) - old_fps
-
-                # if int(fps_final) < 0 or int(fps_final) > 121: 
-                #     fps_final = old_fps
-                
-                if int(fps_final) < 0:
-                        fps_final = 0
-                elif int(fps_final) > 121:
-                        fps_final = 120
-                # print("first : "+str(fps_final))
-                fps_result.append(float(fps_final))
-                old_fps = int(numbers)
-            elif str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")):  # youtube, xbox
+            
+            if str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")):  # youtube, xbox
                 # print(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
                 fps_usage.append(str(device.shell("dumpsys SurfaceFlinger | grep default-format=4 | head -1 ")))
 
@@ -322,7 +306,29 @@ def shell_repeat(num):
                 # print("first : "+str(fps_final))
                 fps_result.append(float(fps_final))
                 old_fps = int(numbers)
-                        
+            elif 1:    
+                # print("/////////////////1////////////////")
+                fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep transform-hint=04 | head -1 "))
+
+                try:
+
+                    ftemp_data = fps_usage[i].split()
+                    numbers = re.sub(r'[^0-9]', '', ftemp_data[3])
+                    fps_final = int(numbers) - old_fps
+
+                    # if int(fps_final) < 0 or int(fps_final) > 121: 
+                    #     fps_final = old_fps
+                    
+                    if int(fps_final) < 0:
+                            fps_final = 0
+                    elif int(fps_final) > 121:
+                            fps_final = 120
+                except:
+                    fps_final = 0
+                    numbers = 0
+                # print("first : "+str(fps_final))
+                fps_result.append(float(fps_final))
+                old_fps = int(numbers)            
             elif str(device.shell("dumpsys SurfaceFlinger | grep Log ")):      
                 # print("/////////////////3////////////////")    
                 fps_usage.append(device.shell("dumpsys SurfaceFlinger | grep Log "))
@@ -382,16 +388,16 @@ def shell_repeat(num):
 def shell_plot(x):
 
     
-    plt.subplot(611)
+    plt.subplot(511)
     fps_result[0] = 0
     plt.plot(x, fps_result, 'C3')
     plt.title('FPS')
     
-    plt.subplot(612)
+    plt.subplot(512)
     plt.plot(x, cpu_normal_result, 'C1')
     plt.title('CPU Usage')
 
-    plt.subplot(613)
+    plt.subplot(513)
     plt.plot(x, ctemp0, 'r', label='cpu0')
     # plt.plot(x, ctemp1, 'r', label='cpu1')
     # plt.plot(x, ctemp2, 'r', label='cpu2')
@@ -404,11 +410,11 @@ def shell_plot(x):
     # plt.legend(loc='right')
     # plt.tight_layout()
 
-    plt.subplot(615)
-    plt.plot(x, gpu_clock_result, 'C10')
-    plt.title('GPU Usage')
+    # plt.subplot(615)
+    # plt.plot(x, gpu_clock_result, 'C10')
+    # plt.title('GPU Usage')
 
-    plt.subplot(614)
+    plt.subplot(514)
     plt.plot(x, dram_freq_result, 'C4')
     plt.title('dram_freq')
 #
@@ -418,7 +424,7 @@ def shell_plot(x):
     # plt.plot(x, network_result, 'C4')
     # plt.title('network')
 
-    plt.subplot(616)
+    plt.subplot(515)
     plt.plot(x, temp0, 'C5', label='temp0')
     # plt.plot(x, temp1, 'C6', label='temp1')
     # plt.plot(x, temp2, 'C7', label='temp2')
@@ -560,5 +566,5 @@ def data_save(num):
 
 shell_repeat(max_num)
 shell_plot(x)
-data_save(max_num)
 data_avg(max_num)
+data_save(max_num)
