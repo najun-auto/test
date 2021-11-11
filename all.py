@@ -54,6 +54,8 @@ ctemp4 = []
 ctemp5 = []
 ctemp6 = []
 ctemp7 = []
+temp_on_off = True
+dram_on_off = True
 
 x = np.arange(0, max_num, 1)
 ##
@@ -266,7 +268,7 @@ def shell_repeat(num):
                 cpu_normal_result.append(total_cpu_n)
 
 
-        if 1:
+        if dram_on_off:
             dram_freq = device.shell("su -c /data/local/tmp/clk_s.sh -d")
             # print((dram_freq.split())[1])
             dram_freq_result.append( int((dram_freq.split())[1]))
@@ -353,7 +355,7 @@ def shell_repeat(num):
             if network_temp != old_network:
                 old_network = (int(recv) + int(send))
 
-        if 1:
+        if temp_on_off:
             temp0_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone0/temp"))
             temp0.append(float((temp0_usage[i].split())[0]))
 
@@ -380,7 +382,10 @@ def shell_repeat(num):
             
             # temp8_usage.append(device.shell("su -c cat /sys/class/thermal/thermal_zone8/temp"))
             # temp8.append(float((temp8_usage[i].split())[0]))
-        
+        # screen_temp = "adb pull /sdcard/test.png " + str(i) + ".png" 
+      
+        # device.shell("adb shell screencap -p | perl -pe 's/\x0D\x0A/\x0A/g' > screen.png")
+        # device.shell(screen_temp)
         time.sleep(0.75) #0.75 perfdog #gamebench
 
 
@@ -414,9 +419,10 @@ def shell_plot(x):
     # plt.plot(x, gpu_clock_result, 'C10')
     # plt.title('GPU Usage')
 
-    plt.subplot(514)
-    plt.plot(x, dram_freq_result, 'C4')
-    plt.title('dram_freq')
+    if dram_on_off:
+        plt.subplot(514)
+        plt.plot(x, dram_freq_result, 'C4')
+        plt.title('dram_freq')
 #
 
     # plt.subplot(615)
@@ -424,18 +430,19 @@ def shell_plot(x):
     # plt.plot(x, network_result, 'C4')
     # plt.title('network')
 
-    plt.subplot(515)
-    plt.plot(x, temp0, 'C5', label='temp0')
-    # plt.plot(x, temp1, 'C6', label='temp1')
-    # plt.plot(x, temp2, 'C7', label='temp2')
-    # plt.plot(x, temp3, 'C8', label='temp3')
-    # plt.plot(x, temp4, 'C9', label='temp4')
-    # plt.plot(x, temp5, 'C10', label='temp5')
-    # plt.plot(x, temp6, 'C11', label='temp6')
-    # plt.plot(x, temp7, 'C12', label='temp7')
-    # plt.plot(x, temp8, 'C13', label='temp8')
-    plt.title('temp')
-    # plt.legend(loc="right")
+    if temp_on_off:
+        plt.subplot(515)
+        plt.plot(x, temp0, 'C5', label='temp0')
+        # plt.plot(x, temp1, 'C6', label='temp1')
+        # plt.plot(x, temp2, 'C7', label='temp2')
+        # plt.plot(x, temp3, 'C8', label='temp3')
+        # plt.plot(x, temp4, 'C9', label='temp4')
+        # plt.plot(x, temp5, 'C10', label='temp5')
+        # plt.plot(x, temp6, 'C11', label='temp6')
+        # plt.plot(x, temp7, 'C12', label='temp7')
+        # plt.plot(x, temp8, 'C13', label='temp8')
+        plt.title('temp')
+        # plt.legend(loc="right")
 
 
 
@@ -482,10 +489,11 @@ def data_avg(num):
 
 
 def data_save(num):
-    f = open('temp_record.txt', 'w')
-    for i in range(num):
-        f.write(str(temp0[i]) + "\n")
-    f.write('------temp0 \n')
+    if temp_on_off:
+        f = open('temp_record.txt', 'w')
+        for i in range(num):
+            f.write(str(temp0[i]) + "\n")
+        f.write('------temp0 \n')
 
     # for i in range(num):
     #     f.write(str(temp1[i]) + "\n")
@@ -555,6 +563,12 @@ def data_save(num):
     for i in range(num):
         f.write(str(ctemp6[i]) + "\n")
     f.write('------cpu freq 6 \n')
+
+    if dram_on_off:
+        f = open('dram_freq_result_record.txt', 'w')
+        for i in range(num):
+            f.write(str(dram_freq_result[i]) + "\n")
+        f.write('------dram freq\n')
 
     # f = open('gpu_record.txt', 'w')
     # for i in range(num):
